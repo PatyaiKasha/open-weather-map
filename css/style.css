@@ -1,0 +1,38 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 800px;
+    padding: 24px 16px;
+    margin: 0 auto;
+}
+
+.weatherCard {
+    background: #ccc;
+    padding: 16px 24px;
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.cityList {
+    float: left;
+}
+
+table {
+    border: 4px double black;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    background: #ccc;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+}

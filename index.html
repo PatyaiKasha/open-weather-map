@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mass and Cycles</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--  <p>Погода в Киеве:</p>
+        <p id="outWeather"></p>
+        <div>
+            <input id="cityId" placeholder="Введите id города">
+            <button id="takeId">Enter</button>
+            <div id="outCity"></div>
+        </div>
+        <hr> -->
+        <select id="cityList" class="cityList" name="citys">
+            <option value="def" selected="" disabled="">--Select the city--</option>
+            <option value="703448">Kiev</option>
+            <option value="702550">Lviv</option>
+            <option value="691650">Ternopil</option>
+            <option value="701824">Mariupol</option>
+            <option value="702569">Lutsk</option>
+            <option value="705812">Kirovograd</option>
+        </select>
+        <!-- <div class="outCityWeather"></div> -->
+        <!-- =======Weather Card======= -->
+        <div class="weatherCard">
+            <h2>Current weather and forecasts in your city</h2>
+            <div>Weather in <span class="selectCityName">Kiev</span>, <span class="selectCityCountry">UA</span></div>
+            <img src="#" alt="weatherPic">
+            <span class="selectCityTemp">0 &#176;C</span>
+            <div class="weatherDesc">Fog</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Pressure</td>
+                        <td class="selectCityPressure">762 mm Hg</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td class="selectCityHumidity">93%</td>
+                    </tr>
+                    <tr>
+                        <td>Visibility</td>
+                        <td class="selectCityVisibility">3000 м.</td>
+                    </tr>
+                    <tr>
+                        <td>СWind speed</td>
+                        <td class="selectCityWindSpeed">3 м*с.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
