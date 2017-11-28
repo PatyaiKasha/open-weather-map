@@ -10,10 +10,12 @@
 }
 
 .weatherCard {
-    background: #ccc;
+    background: #f6c6d6;
     padding: 16px 24px;
     display: inline-block;
     margin-left: 24px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #000;
 }
 
 .cityList {
@@ -32,7 +34,23 @@ th {
     border: 1px solid black;
 }
 
+tr:nth-child(odd) {
+    background: #fefefe;
+}
+
 td {
     padding: 5px;
     border: 1px solid black;
+}
+
+.imgTempBlock {
+    height: 50px;
+}
+
+.imgSrc {
+    vertical-align: middle;
+}
+
+.selectCityTemp {
+    line-height: 50px;
 }

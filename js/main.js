@@ -88,13 +88,23 @@ $('#cityList').change(function(event) {
                 var selectCityTemp = Math.floor(data.main.temp - 273) + ' &#176;C';
                 $('.selectCityTemp').html(selectCityTemp);
 
-                out3 += 'Влажность: ' + data.main.humidity + ' % <br>';
-                out3 += 'Давление: ' + Math.floor(data.main.pressure / 1.333224) + ' mm Hg<br>';
-                out3 += 'Видимость: ' + data.visibility + ' m.<br>';
-                out3 += 'Скорость ветра: ' + data.wind.speed + ' m*s<br>';
-                out3 += 'Погода: ' + data.weather[0].description + '<br>';
-                out3 += `Иконка: <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png"><br>`;
-                // $('.outCityWeather').html(out3);
+                var selectCityHumidity = data.main.humidity + ' %';
+                $('.selectCityHumidity').html(selectCityHumidity);
+
+                var selectCityPressure = Math.floor(data.main.pressure / 1.333224) + ' mm Hg';
+                $('.selectCityPressure').html(selectCityPressure);
+
+                var selectCityVisibility = data.visibility + ' m.';
+                $('.selectCityVisibility').html(selectCityVisibility);
+
+                var selectCityWindSpeed = data.wind.speed + ' m*s';
+                $('.selectCityWindSpeed').html(selectCityWindSpeed);
+
+                var weatherDesc = data.weather[0].description;
+                $('.weatherDesc').html(weatherDesc);
+
+                var imgSrc = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+                $('.imgSrc').attr('src', imgSrc);
             }
         );
     });
